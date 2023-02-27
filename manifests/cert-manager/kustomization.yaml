@@ -6,3 +6,4 @@ resources:
   - ns.yaml
   - og.yaml
   - sub.yaml
+  - ../installplan-approver
