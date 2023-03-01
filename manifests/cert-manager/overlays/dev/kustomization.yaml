@@ -10,7 +10,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/channel
-        value: 'stable'
+        value: 'tech-preview'
       - op: replace
         path: /spec/installPlanApproval
         value: Manual
