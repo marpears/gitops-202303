@@ -5,6 +5,7 @@ metadata:
   namespace: openshift-logging
 spec:
   channel: patch-me
+  installPlanApproval: patch-me
   name: cluster-logging
   source: redhat-operators
   sourceNamespace: openshift-marketplace
