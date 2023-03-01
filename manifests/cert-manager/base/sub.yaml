@@ -6,6 +6,6 @@ metadata:
 spec:
   channel: patch-me
   installPlanApproval: patch-me
-  name: cert-manager
+  name: openshift-cert-manager-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
