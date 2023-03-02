@@ -11,5 +11,5 @@ subjects:
   name: secrets-store-csi-driver
   namespace: csi-secrets-store
 - kind: ServiceAccount
-  name: csi-secrets-store-provider-aws
+  name: secrets-provider-aws-secrets-store-csi-driver-provider-aws
   namespace: csi-secrets-store
