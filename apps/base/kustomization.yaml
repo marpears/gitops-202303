@@ -6,3 +6,4 @@ resources:
 - openshift-logging.yaml
 - csi-secrets-store.yaml
 - rbac.yaml
+- secrets-provider-aws.yaml
