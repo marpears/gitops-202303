@@ -4,6 +4,6 @@ kind: Kustomization
 resources: 
 - cert-manager.yaml
 - openshift-logging.yaml
-- csi-secrets-store.yaml
+- csi-secrets-store-driver.yaml
 - rbac.yaml
 - secrets-provider-aws.yaml
