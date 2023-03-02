@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::804087697908:role/openshift-access-to-mysecret
+  name: default
+  namespace: aws-secret-manager-test-app
