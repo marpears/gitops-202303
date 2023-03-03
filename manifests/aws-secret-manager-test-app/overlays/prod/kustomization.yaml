@@ -1,0 +1,27 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base
+
+patches:
+  - target:
+      kind: SecretProviderClass
+      name: my-application-aws-secrets
+    patch: |-
+      apiVersion: secrets-store.csi.x-k8s.io/v1
+      kind: SecretProviderClass
+      metadata:  
+        name: my-application-aws-secrets
+      spec:      
+        provider: aws
+        parameters:
+          objects: |
+              - objectName: "MySecret"
+                objectType: "secretsmanager"
+  - target: 
+      kind: ServiceAccount
+      name: default
+    patch: |-
+      - op: replace
+        path: /metadata/annotations/eks.amazonaws.com~1role-arn
+        value: 'arn:aws:iam::804087697908:role/openshift-access-to-mysecret'
