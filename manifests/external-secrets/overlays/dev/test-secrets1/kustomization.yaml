@@ -9,3 +9,4 @@ resources:
   - ns.yaml
   - sa.yaml
   - secretstore.yaml
+  - externalsecret.yaml
