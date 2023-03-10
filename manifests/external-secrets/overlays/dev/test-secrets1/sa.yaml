@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::804087697908:role/openshift-test-secrets1-aws-secrets
+  name: my-serviceaccount
