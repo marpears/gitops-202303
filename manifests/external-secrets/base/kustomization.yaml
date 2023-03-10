@@ -7,3 +7,4 @@ resources:
   - sub.yaml
   - ns.yaml
   - operatorconfig.yaml
+  - ../../installplan-approver
