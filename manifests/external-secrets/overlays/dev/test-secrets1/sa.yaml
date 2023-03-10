@@ -3,5 +3,5 @@ kind: ServiceAccount
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "10"
-    eks.amazonaws.com/role-arn: arn:aws:iam::804087697908:role/openshift-test-secrets1-aws-secrets
+    eks.amazonaws.com/role-arn: arn:aws:iam::731174634047:role/openshift-test-secrets1-aws-secrets
   name: my-serviceaccount
