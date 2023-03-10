@@ -7,3 +7,4 @@ resources:
 - csi-secrets-store-driver.yaml
 - rbac.yaml
 - secrets-provider-aws.yaml
+- external-secrets.yaml

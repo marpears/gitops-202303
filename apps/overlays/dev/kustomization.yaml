@@ -19,3 +19,10 @@ patches:
     - op: replace
       path: /spec/source/path
       value: './manifests/openshift-logging/overlays/dev'
+- target:
+    kind: Application
+    name: external-secrets
+  patch: |-
+    - op: replace
+      path: /spec/source/path
+      value: './manifests/external-secrets/overlays/dev'
